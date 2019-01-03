@@ -1,0 +1,187 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	.item
+		.loginform
+			.loginform-box
+				.loginform-box-inner
+					form(autocomple="off")
+						h2 
+							span Login Page
+						.form-group
+							.boxinput
+								input#emxampleInputEmail1.form-control(type="email" aria-describeldy="emailHelp" autocomple="nope")
+								p.mt-2.input
+								label(for="exampleInputEmail") Email address
+								small.mt-2#emailHelp.form-text.text-muted we'll never share your email with anyone else
+						.form-group
+							.boxinput
+								input#emxampleInputPassword1.form-control(type="password"  autocomple="new-password")
+								p.mt-2.input
+								label(for="emxampleInputPassword1") Password
+							.form-group.form-check.mt-4
+								input#exampleCheck1.form-check-input(type="checkbox")
+								label.form-check-label(for="exampleCheck1") Check me out
+								button.btn.btn-primary(type="submit") Submit
+								
+	//- input#background(type="text" ,placeholder ="Hãy nhập màu cho background") 
+	//- section.test-step-by-step
+	//- 	.container
+	//- 		.row
+	//- 			.col
+	//- 				nav
+	//- 					ul
+	//- 						li.active
+	//- 							span Step 1
+	//- 						li
+	//- 							span Step 2
+	//- 						li
+	//- 							span Step 3
+	//- 		.row
+	//- 			.col
+	//- 				button.btn.btn-primary.prev(type="button") Previous
+	//- 				button.btn.btn-primary.next(type="button") Next
+	//- 				button.btn.btn-primary.reset(type="button") Reset
+
+							
+	//- section.tool-change-paragrap
+	//- 	.container
+	//- 		.row
+	//- 			.col-8
+	//- 				.letterspacing
+	//- 					.slidecontainer
+	//- 						p Letter-Spacing
+	//- 						input#myRange.slider.letterspacing(type="range" min="1" max="100" value="0")
+	//- 				.font-weight
+	//- 					.slidecontainer
+	//- 						p font-weight
+	//- 						input#myRange.slider.font-weight(type="range" min="400" max="1000" value="400")
+	//- 				.text-decoration
+	//- 					.form-group.form-check
+	//- 						p Text-Decorations
+	//- 						input#exampleCheck1.form-check-input.text-decoration(type="checkbox")
+	//- 						label.form-check-label(for="exampleCheck1") Bật/Tắt Underline
+	//- 			.col-4
+	//- 				p.text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quis magni vitae hic nesciunt deleniti perferendis provident nobis, omnis sunt ad quod laboriosam eligendi incidunt. Saepe eos quia asperiores voluptatem.
+	//- 				p.result-letterspacing
+	//- 				p.result-font-weight
+
+
+	//- section.demo-xoayhinh
+	//- 	.container
+	//- 		.row
+	//- 			.col-4
+	//- 				.scaleX
+	//- 					.slidecontainer
+	//- 						p Scale(X)
+	//- 						input#myRange.slider.scaleX(type="range" min="1" max="100" value="0")
+	//- 				.scaleY
+	//- 					.slidecontainer
+	//- 						p Scale(Y)
+	//- 						input#myRange.slider.scaleY(type="range" min="1" max="100" value="0")
+	//- 				.translateX
+	//- 					.slidecontainer
+	//- 						p Translate(X)
+	//- 						input#myRange.slider.translateX(type="range" min="-1000" max="1000" value="0")
+	//- 				.translateY
+	//- 					.slidecontainer
+	//- 						p Translate(Y)
+	//- 						input#myRange.slider.translateY(type="range" min="-1000" max="1000" value="0")
+	//- 				.SkewX
+	//- 					.slidecontainer
+	//- 						p Skew(X)
+	//- 						input#myRange.slider.skewX(type="range" min="-1000" max="1000" value="0")
+	//- 				.SkewY
+	//- 					.slidecontainer
+	//- 						p Skew(Y)
+	//- 						input#myRange.slider.skewY(type="range" min="-1000" max="1000" value="0")
+	//- 				.rotate
+	//- 					.slidecontainer
+	//- 						p Rotate
+	//- 						input#myRange.slider.rotate(type="range" min="-1000" max="1000" value="0")
+	//- 				.color
+	//- 					input.color(name="Color Picker" type="color" value="#fff")
+	//- 					lable 
+	//- 						strong.ml-3 Change Background for img 
+	//- 			.col-8.img
+	//- 				span.img
+
+
+	//- section
+	//- 	.container
+	//- 		.row
+	//- 			.col-4.scrollbar
+	//- 				- for(x =1 ;x <=12 ;x++)
+	//- 					p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae ea dolorum beatae, praesentium fuga accusamus! Iusto impedit eos, quia exercitationem consequuntur, architecto vero quasi ipsum deserunt rem esse earum.
+		//- demo các sản phẩm trong shop
+	//- section.shop
+	//- 	.container
+	//- 		.row
+	//- 			.col-3
+	//- 				nav
+	//- 					ul
+	//- 						li
+	//- 							a(href="#") dasdas
+	//- 						li
+	//- 							a(href="#") asdsadsa
+	//- 						li
+	//- 							a(href="#") sadas
+	//- 			.col-9
+	//- 				.item
+	//- 					-for(x =1;x<9;x++)
+	//- 						img(src="./img/home_news_1.jpg", alt="")
+
+		//demo run number
+	//- section.demo-run-number
+	//- 	.container.text-center
+	//- 		.row
+	//- 			.col-md-4
+	//- 				.row.demo1
+	//- 					.col
+	//- 						img.img-fluid(src="./img/home_news_1.jpg", alt="")
+	//- 						p.mt-2(data-count="2000") 0
+	//- 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus harum! Assumenda modi, et deserunt delectus nulla sequi aut impedit recusandae quod magni explicabo sapiente dolorem asperiores, labore quibusdam aliquid! 
+	//- 				.row.demo1
+	//- 					.col
+	//- 						img.img-fluid(src="./img/home_news_1.jpg", alt="")
+	//- 						p.mt-2(data-count="3000") 0 
+	//- 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus harum! Assumenda modi, et deserunt delectus nulla sequi aut impedit recusandae quod magni explicabo sapiente dolorem asperiores, labore quibusdam aliquid! 
+	//- 			.col-md-4.demo
+	//- 				.box
+	//- 					img.img-fluid(src="./img/home_news_1.jpg", alt="")
+	//- 					p.mt-2(data-count="4000") 0 
+	//- 					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus harum! Assumenda modi, et deserunt delectus nulla sequi aut impedit recusandae quod magni explicabo sapiente dolorem asperiores, labore quibusdam aliquid! 
+	//- 			.col-md-4
+	//- 				.row.demo1
+	//- 					.col
+	//- 						img.img-fluid(src="./img/home_news_1.jpg", alt="")
+	//- 						p.mt-2(data-count="5000") 0
+	//- 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus harum! Assumenda modi, et deserunt delectus nulla sequi aut impedit recusandae quod magni explicabo sapiente dolorem asperiores, labore quibusdam aliquid!  
+	//- 				.row.demo1
+	//- 					.col
+	//- 						img.img-fluid(src="./img/home_news_1.jpg", alt="")
+	//- 						p.mt-2(data-count="6000") 0 
+	//- 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus harum! Assumenda modi, et deserunt delectus nulla sequi aut impedit recusandae quod magni explicabo sapiente dolorem asperiores, labore quibusdam aliquid! 
+					
+	section.seo-gen
+		.container.mt-3
+			.row
+				.col-6
+					.row
+						.col
+							h1 Seo Gen
+							hr
+					.row
+						.col
+							#genForm
+					.row
+						.col
+							button#CreareForm.btn.btn-primary(type="button" onclick="javascript:appSeo.getCreateForm()") Tạo SEO
+				.col-6#result
